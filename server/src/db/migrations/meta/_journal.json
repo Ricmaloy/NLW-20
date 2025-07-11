@@ -15,6 +15,13 @@
       "when": 1752130056098,
       "tag": "0001_absent_epoch",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1752187193990,
+      "tag": "0002_lively_black_bolt",
+      "breakpoints": true
     }
   ]
 }

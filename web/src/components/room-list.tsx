@@ -11,11 +11,8 @@ import { dayjs } from '@/lib/dayjs'
 import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
-
-
 export function RoomsList() {
-  const {data, isLoading} = useRooms()
-
+  const { data, isLoading } = useRooms()
   return (
     <Card>
       <CardHeader>
@@ -29,7 +26,7 @@ export function RoomsList() {
         {isLoading && (
           <p className="text-muted-foreground text-sm">Carregando salas...</p>
         )}
-
+        
         {data?.map((room) => {
           return (
             <Link
@@ -45,7 +42,7 @@ export function RoomsList() {
                     {dayjs(room.createdAt).toNow()}
                   </Badge>
                   <Badge className="text-xs" variant={'secondary'}>
-                    {room.questionCount} perguntas
+                    {room.questionsCount} perguntas
                   </Badge>
                 </div>
               </div>
